@@ -21,17 +21,20 @@ namespace ConsoleApp2._5
             string userInput3;
             string userInput4;
             string exitWord = "";
+            
             while (exitWord != "exit")
             {
                 Console.WriteLine($"Ваш баланс: {rub} рублей, {usd} долларов, {eur} евро");
                 Console.WriteLine("Какую валюту меняем?\n1-рубли\n2-доллары\n3-евро");
                 userInput = Console.ReadLine();
-                switch (userInput)
+                
+                switch (userInput)                    
                 {
                     case "1":
                         Console.WriteLine("На какую валюту менаяем?\n1-доллары\n2-евро");
                         userInput2 = Console.ReadLine();
-                        switch (userInput2)
+                        
+                        switch (userInput2)                            
                         {
                             case "1":
                                 Console.WriteLine("Сколько обменять");
@@ -97,6 +100,7 @@ namespace ConsoleApp2._5
                     case "3":
                         Console.WriteLine("На какую валюту менаяем?\n1-рубли\n2-доллары");
                         userInput4 = Console.ReadLine();
+                        
                         switch (userInput4)
                         {
                             case "1":
